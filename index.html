@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliker With Meaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">
+            Cliker<br>With Meaming
+        </div>
+        <nav>
+            <button class="nav-btn home">Home</button>
+            <div class="dropdown-wrapper">
+                <button class="nav-btn" id="upgrades-nav-btn">Upgrades</button>
+                <div class="dropdown-content" id="upgrades-dropdown">
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <span class="upgrade-name">Сила клика</span>
+                            <span class="upgrade-desc">+1 очко за клик</span>
+                        </div>
+                        <button class="buy-btn" id="buy-click-upgrade">Купить (<span id="click-cost">10</span>)</button>
+                    </div>
+                    <div class="upgrade-item">
+                        <div class="upgrade-info">
+                            <span class="upgrade-name">Автокликер</span>
+                            <span class="upgrade-desc">+1 очко в сек.</span>
+                        </div>
+                        <button class="buy-btn" id="buy-auto-upgrade">Купить (<span id="auto-cost">50</span>)</button>
+                    </div>
+                </div>
+            </div>
+            <button class="nav-btn">Stats</button>
+            <button class="nav-btn">Achievement</button>
+            <button class="square-btn"></button>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        
+        <div class="side-panel">
+            <div class="info-block">
+                <div id="score-val" class="score-value">0</div>
+                <div class="score-title">Meaming Points</div>
+            </div>
+            
+            <div class="info-block">
+                <div id="cps-val" class="score-value" style="font-size: 18px;">0</div>
+                <div class="score-title" style="font-size: 12px;">очков в сек.</div>
+            </div>
+            <div class="info-block"></div>
+        </div>
+
+        <div class="click-zone">
+            <div class="click-circle" id="click-target">
+                <span class="star-icon">★</span>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
