@@ -37,7 +37,7 @@
                 </div>
             </div>
             <button class="nav-btn" id="stats-nav-btn">Статистика</button>
-            <button class="nav-btn">Награды</button>
+            <button class="nav-btn" id="rewards-nav-btn">Награды</button>
         </nav>
     </header>
 
@@ -86,6 +86,49 @@
                     <span>Время в игре:</span>
                     <span id="stat-time-played">0 сек.</span>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="rewards-modal">
+        <div class="modal-content rewards-content">
+            <div class="modal-header">
+                <h2>Награды</h2>
+                <button class="close-btn" id="close-rewards-btn">&times;</button>
+            </div>
+            <div class="modal-body rewards-list">
+                
+                <div class="reward-item locked" id="reward-clicks">
+                    <div class="reward-icon">🎯</div>
+                    <div class="reward-info">
+                        <div class="reward-title">Начинающий кликер</div>
+                        <div class="reward-desc">Сделать 50 кликов</div>
+                    </div>
+                </div>
+    
+                <div class="reward-item locked" id="reward-points">
+                    <div class="reward-icon">💰</div>
+                    <div class="reward-info">
+                        <div class="reward-title">Магнат Meaming</div>
+                        <div class="reward-desc">Набрать 500 очков всего</div>
+                    </div>
+                </div>
+    
+                <div class="reward-item locked" id="reward-upgrades">
+                    <div class="reward-icon">⚡</div>
+                    <div class="reward-info">
+                        <div class="reward-title">Технологичный</div>
+                        <div class="reward-desc">Купить 10 апгрейдов</div>
+                    </div>
+                </div>
+    
+                <div class="reward-item locked" id="reward-time">
+                    <div class="reward-icon">⏳</div>
+                    <div class="reward-info">
+                        <div class="reward-title">Преданный фанат</div>
+                        <div class="reward-desc">Провести в игре 60 сек.</div>
+                    </div>
+                </div>
+    
             </div>
         </div>
     </div>
