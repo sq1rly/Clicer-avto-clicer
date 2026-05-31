@@ -2,8 +2,8 @@ let points = 0;
 let clickPower = 1;
 let passiveIncome = 0;
 
-let clickUpgradeCost = 10;
-let autoUpgradeCost = 50;
+let clickUpgradeCost = 5;
+let autoUpgradeCost = 20;
 
 const clickTarget = document.getElementById('click-target');
 const scoreDisplay = document.getElementById('score-val');
