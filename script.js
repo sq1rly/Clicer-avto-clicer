@@ -38,7 +38,7 @@ buyClickBtn.addEventListener('click', () => {
     if (points >= clickUpgradeCost) {
         points -= clickUpgradeCost;
         clickPower += 1;
-        clickUpgradeCost = Math.round(clickUpgradeCost * 1.5);
+        clickUpgradeCost = Math.round(clickUpgradeCost * 1.2);
         updateUI();
         checkButtonsStatus();
     }
@@ -48,7 +48,7 @@ buyAutoBtn.addEventListener('click', () => {
     if (points >= autoUpgradeCost) {
         points -= autoUpgradeCost;
         passiveIncome += 1;
-        autoUpgradeCost = Math.round(autoUpgradeCost * 1.5);
+        autoUpgradeCost = Math.round(autoUpgradeCost * 1.2);
         updateUI();
         checkButtonsStatus();
     }
