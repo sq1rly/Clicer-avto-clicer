@@ -25,18 +25,18 @@
                             <span class="upgrade-name">Сила клика</span>
                             <span class="upgrade-desc">+1 очко за клик</span>
                         </div>
-                        <button class="buy-btn" id="buy-click-upgrade">Купить (<span id="click-cost">10</span>)</button>
+                        <button class="buy-btn" id="buy-click-upgrade">Купить (<span id="click-cost">5</span>)</button>
                     </div>
                     <div class="upgrade-item">
                         <div class="upgrade-info">
                             <span class="upgrade-name">Автокликер</span>
                             <span class="upgrade-desc">+1 очко в сек.</span>
                         </div>
-                        <button class="buy-btn" id="buy-auto-upgrade">Купить (<span id="auto-cost">50</span>)</button>
+                        <button class="buy-btn" id="buy-auto-upgrade">Купить (<span id="auto-cost">20</span>)</button>
                     </div>
                 </div>
             </div>
-            <button class="nav-btn">Статистика</button>
+            <button class="nav-btn" id="stats-nav-btn">Статистика</button>
             <button class="nav-btn">Награды</button>
         </nav>
     </header>
@@ -63,8 +63,32 @@
         </div>
 
     </main>
-
+    <div class="modal-overlay" id="stats-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Статистика</h2>
+                <button class="close-btn" id="close-stats-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="stats-row">
+                    <span>Всего кликов:</span>
+                    <span id="stat-total-clicks">0</span>
+                </div>
+                <div class="stats-row">
+                    <span>Заработано очков:</span>
+                    <span id="stat-total-earned">0</span>
+                </div>
+                <div class="stats-row">
+                    <span>Куплено апгрейдов:</span>
+                    <span id="stat-total-upgrades">0</span>
+                </div>
+                <div class="stats-row">
+                    <span>Время в игре:</span>
+                    <span id="stat-time-played">0 сек.</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
-
